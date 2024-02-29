@@ -88,7 +88,7 @@ def main():
 
             break
         except:
-            time.sleep(10) # retry in 2 mins if connection fails
+            time.sleep(1) # retry in 2 mins if connection fails
 
     while 1:
         try:
