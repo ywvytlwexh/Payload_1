@@ -15,8 +15,14 @@ C2_PORT     = 9999
 base_user_agents = [
     'Mozilla/%.1f (Windows; U; Windows NT {0}; en-US; rv:%.1f.%.1f) Gecko/%d0%d Firefox/%.1f.%.1f'.format(random.uniform(5.0, 10.0)),
     'Mozilla/%.1f (Windows; U; Windows NT {0}; en-US; rv:%.1f.%.1f) Gecko/%d0%d Chrome/%.1f.%.1f'.format(random.uniform(5.0, 10.0)),
-    'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36',
-    'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.1.2 Safari/605.1.15',
+    'Mozilla/%.1f (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/%.1f.%.1f (KHTML, like Gecko) Version/%d.0.%d Safari/%.1f.%.1f',
+    'Mozilla/%.1f (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/%.1f.%.1f (KHTML, like Gecko) Version/%d.0.%d Safari/%.1f.%.1f',
+    'Mozilla/%.1f (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/%.1f.%.1f (KHTML, like Gecko) Version/%d.0.%d Safari/%.1f.%.1f',
+    'Mozilla/%.1f (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/%.1f.%.1f (KHTML, like Gecko) Version/%d.0.%d Safari/%.1f.%.1f',
+    'Mozilla/%.1f (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/%.1f.%.1f (KHTML, like Gecko) Chrome/%d.0.%d Safari/%.1f.%.1f',
+    'Mozilla/%.1f (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/%.1f.%.1f (KHTML, like Gecko) Chrome/%d.0.%d Safari/%.1f.%.1f',
+    'Mozilla/%.1f (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/%.1f.%.1f (KHTML, like Gecko) Chrome/%d.0.%d Safari/%.1f.%.1f',
+    'Mozilla/%.1f (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/%.1f.%.1f (KHTML, like Gecko) Chrome/%d.0.%d Safari/%.1f.%.1f',
 ]
 
 def rand_ua():
